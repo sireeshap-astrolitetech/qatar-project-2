@@ -1,0 +1,357 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+  height: 100%;
+}
+
+.main-frame {
+  display: flex;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 50;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  padding-left: -30px;
+}
+
+.sidebar.closed {
+  transform: translateX(-100%);
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.right-section {
+  flex: 1;
+  transition: margin-left 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .right-section.shifted {
+    margin-left: 250px;
+  }
+}
+
+
+        .sidebar-logo-section {
+          display: flex;
+          align-items: center;
+          margin-bottom: 32px; 
+        }
+
+        .sidebar-logo {
+          width: 30px; 
+          height: 30px; 
+          margin-right: 8px; 
+          border-radius: 9999px; 
+        }
+
+        .sidebar-logo-text {
+          font-size: 1.25rem; 
+          font-weight: 700; 
+          color: #1f2937; 
+        }
+
+        .buy-sell-buttons {
+          display: flex;
+          gap: 8px; 
+          margin-bottom: 32px; 
+        }
+
+        .buy-button {
+          flex: 1; 
+          padding: 8px 10px; 
+          background-color: blue; 
+          color: #ffffff; 
+          border-radius: 0.375rem; 
+          font-weight: 600; 
+          font-size: 1.0rem; 
+          transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform; 
+          transition-duration: 150ms; 
+        }
+
+        .buy-button:hover {
+          background-color: #16a34a; 
+        }
+
+        .sell-button {
+          flex: 1; 
+          padding: 8px 0px; 
+          background-color: white; 
+          color: blue; 
+          border-radius: 0.375rem;
+          font-weight: 600;
+          font-size: 1.0rem; 
+          transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform; 
+          transition-duration: 150ms;
+          width:150px;
+          border: none;
+        }
+
+        .sell-button:hover {
+          background-color: #d1d5db; 
+        }
+
+        .nav-item {
+          margin-bottom: 10px;
+        }
+
+        .nav-link {
+          display: flex;
+          align-items: center;
+          color: #4b5563; 
+          padding: 8px; 
+          border-radius: 0.375rem; 
+          transition-property: color, background-color; 
+          transition-duration: 150ms;
+        }
+
+        .nav-link:hover {
+          color: #22c55e; 
+        }
+
+        
+
+        .nav-icon {
+          width: 20px; 
+          height: 20px; 
+          margin-right: 12px; 
+        }
+
+        .order-badge {
+          margin-left: auto; 
+          background-color: #22c55e; 
+          color: #ffffff; 
+          font-size: 0.75rem; 
+          font-weight: 700; 
+          padding: 2px 10px; 
+          border-radius: 9999px; 
+          margin-right: 15px;
+        }
+
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+
+
+        
+        .header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background-color: #f3f4f6; 
+          padding: 0px; 
+          border-radius: 0.5rem; 
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); 
+          margin-bottom: 32px; 
+          
+        }
+
+        .search-bar-container {
+          position: relative;
+          flex: 1;
+          margin-right: 80px; 
+          
+        }
+
+        .search-input {
+          width: 100%; 
+          padding-left: 40px; 
+          padding-right: 16px; 
+          padding-top: 8px; 
+          padding-bottom: 8px; 
+          border-radius: 0.5rem; 
+          border: 1px solid #e5e7eb; 
+          outline: none; 
+          
+        }
+
+        .search-input:focus {
+          border-color: #4ade80; 
+          box-shadow: 0 0 0 2px rgba(74, 222, 128, 0.5); 
+        }
+
+        .search-icon {
+          width: 20px; 
+          height: 20px; 
+          color: #9ca3af; 
+          position: absolute;
+          left: 12px;
+          top: 50%;
+          transform: translateY(-50%); 
+         
+        }
+
+        .header-actions {
+          display: flex;
+          align-items: center;
+          gap: 16px; 
+         
+        }
+
+        .header-button {
+          padding: 8px; 
+          border-radius: 9999px; 
+          background-color: #f3f4f6; 
+          color: #4b5563;
+          transition-property: background-color; 
+          transition-duration: 150ms;
+        }
+
+        .header-button:hover {
+          background-color: #e5e7eb; 
+        }
+
+        .header-button-icon {
+          width: 24px; 
+          height: 34px; 
+        }
+
+       
+
+
+        .user-profile {
+          display: flex;
+          align-items: center;
+          gap: 8px; 
+        }
+
+        .user-avatar {
+          width: 40px; 
+          height: 40px; 
+          border-radius: 9999px; 
+        }
+
+        .user-name {
+          font-weight: 500; 
+          color: #1f2937; 
+        }
+
+        .dropdown-icon {
+          width: 16px; 
+          height: 16px; 
+          color: #4b5563; 
+        }
+
+
+.main-frame {
+  display: flex;
+  height: 100vh; 
+  overflow-y: 0;
+}
+
+@media (max-width: 768px) {
+  .main-frame {
+    flex-direction: column;
+  }
+
+  .right-section {
+    margin-left: 0 !important;
+  }
+}
+
+.translate-x-0 {
+  transform: translateX(0);
+}
+.-translate-x-full {
+  transform: translateX(-100%);
+}
+.transition-transform {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* 🌙 DARK MODE STYLING */
+body.dark-mode {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+body.dark-mode .sidebar {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+body.dark-mode .header {
+  background-color: #1f2937;
+  color: #f9fafb;
+}
+
+body.dark-mode .nav-link {
+  color: #e5e7eb;
+}
+
+body.dark-mode .nav-link:hover {
+  background-color: #374151;
+  color: #a7f3d0;
+}
+
+body.dark-mode .buy-button {
+  background-color: #4ade80;
+  color: black;
+}
+
+body.dark-mode .sell-button {
+  background-color: #d1d5db;
+  color: black;
+}
+
+body.dark-mode .search-input {
+  background-color: #374151;
+  border-color: #4b5563;
+  color: #f3f4f6;
+}
+
+body.dark-mode .search-input::placeholder {
+  color: #9ca3af;
+}
+
+body.dark-mode .floating-icons button {
+  background-color: #374151;
+  color: #f9fafb;
+}
+
+
+
+
+
+body.dark-mode,
+body.dark-mode html,
+body.dark-mode .main-frame {
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+
+body.dark-mode .main-content,
+body.dark-mode .income-section,
+body.dark-mode .notifications,
+body.dark-mode .card {
+  background-color: #1f2937 !important;
+  color: #f9fafb;
+}
+
+.hamburger-btn {
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
