@@ -63,7 +63,7 @@ function MainContent({ isDarkMode }) {
                   backgroundColor: isDarkMode ? "#1f2937" : "#ffffff",
                   color: isDarkMode ? "#f1f5f9" : "#1f2937",
                   borderRadius: "10px",
-                  padding: "20px",
+                  padding: "0px",
                 }}
               >
                 <div className="department-header">
@@ -169,8 +169,8 @@ function MainContent({ isDarkMode }) {
                       isDarkMode ? "40C057" : "000000"
                     }`}
                     alt="Veggies"
-                    width={40}
-                    height={40}
+                    width={60}
+                    height={60}
                   />
 
                   <p
@@ -190,8 +190,8 @@ function MainContent({ isDarkMode }) {
                   <img
                     src="https://img.icons8.com/?size=100&id=108475&format=png&color=40C057"
                     alt="Tubers"
-                    width={40}
-                    height={40}
+                    width={60}
+                    height={60}
                   />
                   <p className="category-stock">2.040 stock</p>
                   <p className="category-name">Tubers</p>
@@ -200,8 +200,8 @@ function MainContent({ isDarkMode }) {
                   <img
                     src="https://img.icons8.com/?size=100&id=9238&format=png&color=40C057"
                     alt="Fish"
-                    width={40}
-                    height={40}
+                    width={60}
+                    height={60}
                   />
                   <p className="category-stock">548 stock</p>
                   <p className="category-name">Fish</p>
@@ -210,8 +210,8 @@ function MainContent({ isDarkMode }) {
                   <img
                     src="https://img.icons8.com/?size=100&id=10107&format=png&color=40C057"
                     alt="Fruits"
-                    width={40}
-                    height={40}
+                    width={60}
+                    height={60}
                   />
                   <p className="category-stock">300 stock</p>
                   <p className="category-name">Fruits</p>
@@ -220,8 +220,8 @@ function MainContent({ isDarkMode }) {
                   <img
                     src="https://img.icons8.com/?size=100&id=95681&format=png&color=40C057"
                     alt="Meat"
-                    width={40}
-                    height={40}
+                    width={60}
+                    height={60}
                   />
                   <p className="category-stock">236 stock</p>
                   <p className="category-name">Meat</p>
@@ -255,7 +255,7 @@ function MainContent({ isDarkMode }) {
                       style={{
                         marginLeft: "15px",
                         backgroundColor: "#4CAF50",
-                        marginTop: "10px",
+                        marginTop: "-10px",
                         borderRadius: "50%",
                         padding: "5px",
                       }}
@@ -282,7 +282,7 @@ function MainContent({ isDarkMode }) {
                       style={{
                         marginLeft: "15px",
                         backgroundColor: "#4CAF50",
-                        marginTop: "10px",
+                        marginTop: "-10px",
                         borderRadius: "50%",
                         padding: "5px",
                       }}
@@ -304,7 +304,7 @@ function MainContent({ isDarkMode }) {
                       style={{
                         marginLeft: "15px",
                         backgroundColor: "#4CAF50",
-                        marginTop: "10px",
+                        marginTop: "-10px",
                         borderRadius: "50%",
                         padding: "5px",
                       }}
@@ -326,7 +326,7 @@ function MainContent({ isDarkMode }) {
                       style={{
                         marginLeft: "15px",
                         backgroundColor: "#4CAF50",
-                        marginTop: "10px",
+                        marginTop: "-10px",
                         borderRadius: "50%",
                         padding: "5px",
                       }}
@@ -389,15 +389,15 @@ function MainContent({ isDarkMode }) {
                     <img
                       src={CabageeIcon}
                       alt="Cabbage"
-                      width={70}
-                      height={70}
+                      width={50}
+                      height={50}
                     />
                   </div>
-                  <div style={{ marginLeft: "50px" }}>
-                    <h1>Cabagee</h1>
+                  <div style={{ marginLeft: "30px" }}>
+                    <h2>Cabagee</h2>
                     <p
                       style={{
-                        marginTop: "-15px",
+                        marginTop: "-10px",
                         color: "gray",
                         fontSize: "14px",
                         marginLeft: "12px",
@@ -412,15 +412,15 @@ function MainContent({ isDarkMode }) {
                     <img
                       src={BrocolyIcon}
                       alt="Brocoly"
-                      width={70}
-                      height={70}
+                      width={50}
+                      height={50}
                     />
                   </div>
-                  <div style={{ marginLeft: "50px" }}>
+                  <div style={{ marginLeft: "30px" }}>
                     <h1>Brocoly</h1>
                     <p
                       style={{
-                        marginTop: "-15px",
+                        marginTop: "-10px",
                         color: "gray",
                         fontSize: "14px",
                         marginLeft: "12px",

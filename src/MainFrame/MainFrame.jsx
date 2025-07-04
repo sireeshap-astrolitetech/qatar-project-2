@@ -91,7 +91,17 @@ function MainFrame() {
             <ul className="list-none p-0 m-0" style={{ listStyle: "none" }}>
               <li
                 className="nav-item mb-4"
-                style={{ marginTop: "20px", marginBottom: "-10px" }}
+                style={{
+                  marginTop: "20px",
+                  marginBottom: "-10px",
+                  backgroundColor: "#b9f1df",
+                  width: "200px",
+                  borderRadius: "5px",
+
+                  transition:
+                    "background-color 0.2s, color 0.2s, border-right-color 0.2s",
+                  borderRight: "5px solid green",
+                }}
               >
                 <a
                   href="#"
@@ -112,7 +122,10 @@ function MainFrame() {
                 </a>
               </li>
 
-              <li className="nav-item mb-4" style={{ marginTop: "25px" }}>
+              <li
+                className="nav-item mb-4"
+                style={{ marginTop: "25px", width: "200px" }}
+              >
                 <a
                   href="#"
                   className="nav-link flex items-center p-3 rounded-lg text-gray-700 hover:bg-gray-200 transition-all duration-200"

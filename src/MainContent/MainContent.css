@@ -104,7 +104,7 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          margin-bottom: 16px; 
+          margin-bottom: 0px; 
         }
 
         .filter-button {
@@ -135,7 +135,7 @@
         }
 
         .category-card {
-          padding: 16px; 
+          padding: 10px; 
           border-radius: 0.5rem; 
           display: flex;
           flex-direction: column;
@@ -158,14 +158,14 @@
         .category-image { 
           width: 32px; 
           height: 32px; 
-          margin-bottom: 8px; 
+          margin-bottom: 0px; 
           border-radius: 50%; 
           object-fit: cover; 
         }
 
         
         .category-stock {
-          font-size: 1.125rem; 
+          font-size: 1.0rem; 
           font-weight: 600; 
           color: #1f2937; 
         }
@@ -177,6 +177,7 @@
         .category-name {
           font-size: 0.875rem; 
           color: #4b5563; 
+          margin-top: -10px;
         }
 
         .category-card.active .category-name {
@@ -188,7 +189,7 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          margin-bottom: 16px; 
+          margin-bottom: 5px; 
         }
 
         .see-all-link {
@@ -200,7 +201,7 @@
         .product-grid {
           display: grid;
           grid-template-columns: repeat(2, minmax(0, 1fr)); 
-          gap: 16px;
+          gap: 10px;
         }
 
         @media (min-width: 768px) { 
@@ -211,7 +212,7 @@
 
         .product-card {
           
-          padding: 16px; 
+          padding: 10px; 
           border-radius: 0.5rem; 
           text-align: center;
           box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); 
@@ -234,6 +235,7 @@
           font-size: 0.875rem; 
           color: #6b7280; 
           margin-bottom: 8px; 
+          margin-top: -5px;
         }
 
         .product-price-unit {
@@ -273,6 +275,7 @@
         .notification-title {
           color: #1f2937; 
           font-weight: 500; 
+          margin-bottom: -50px;
         }
 
         .notification-time {
