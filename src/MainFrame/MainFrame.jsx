@@ -296,11 +296,81 @@ function MainFrame() {
           </nav>
         </div>
       </aside>
+      <aside className="mini-sidebar">
+        <div className="sidebar-logo-section mb-8 text-center">
+          <div className="text-2xl font-bold text-gray-800 rounded-md p-2">
+            <img
+              src={LogoIcon}
+              alt="Astrolite Logo"
+              width={90}
+              height={30}
+              style={{ marginTop: "10px" }}
+            />
+          </div>
+        </div>
+
+        <ul className="mini-nav-icons">
+          <li style={{ marginTop: "-20px" }}>
+            <div className="mini-icon-wrapper">
+              <Home className="mini-icon" />
+              <span className="mini-label">Market</span>
+            </div>
+          </li>
+          <li>
+            <div className="mini-icon-wrapper">
+              <LayoutGrid className="mini-icon" />
+              <span className="mini-label">Categories</span>
+            </div>
+          </li>
+          <li>
+            <div className="mini-icon-wrapper">
+              <ClipboardList className="mini-icon" />
+              <span className="mini-label">Orders</span>
+            </div>
+          </li>
+          <li>
+            <div className="mini-icon-wrapper">
+              <Heart className="mini-icon" />
+              <span className="mini-label">Favourite</span>
+            </div>
+          </li>
+          <li>
+            <div className="mini-icon-wrapper">
+              <ShoppingCart className="mini-icon" />
+              <span className="mini-label">Cart</span>
+            </div>
+          </li>
+          <li>
+            <div className="mini-icon-wrapper">
+              <MessageSquare className="mini-icon" />
+              <span className="mini-label">Message</span>
+            </div>
+          </li>
+          <li>
+            <div className="mini-icon-wrapper">
+              <MessageSquare className="mini-icon" />
+              <span className="mini-label">Feedback</span>
+            </div>
+          </li>
+          <li>
+            <div className="mini-icon-wrapper">
+              <HelpCircle className="mini-icon" />
+              <span className="mini-label">Help</span>
+            </div>
+          </li>
+          <li>
+            <div className="mini-icon-wrapper">
+              <Settings className="mini-icon" />
+              <span className="mini-label">Settings</span>
+            </div>
+          </li>
+        </ul>
+      </aside>
 
       {/* 🟦 Right Side (Header + Main Content) */}
       <div
         className={`right-section ${
-          isSidebarOpen && windowWidth >= 768 ? "shifted" : ""
+          windowWidth >= 768 ? (isSidebarOpen ? "shifted" : "mini") : ""
         }`}
       >
         <header className="header">
@@ -418,7 +488,7 @@ function MainFrame() {
                     : "text-gray-700 hover:text-blue-500"
                 }`}
               />
-              <button
+              {/* <button
                 onClick={() => setIsDarkMode(!isDarkMode)}
                 title="Toggle Dark Mode"
                 style={{ border: "none" }}
@@ -428,7 +498,11 @@ function MainFrame() {
                 ) : (
                   <Moon className="icon" />
                 )}
-              </button>
+              </button> */}
+              <Heart
+                className="w-6 h-6 mr-3"
+                style={{ marginRight: "10px", height: "30px" }}
+              />
               <button
                 onClick={toggleFullscreen}
                 title="Toggle Fullscreen"

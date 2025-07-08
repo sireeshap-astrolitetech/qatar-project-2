@@ -339,7 +339,7 @@ function MainContent({ isDarkMode }) {
 
           <div className="income-notifications-column">
             {/* Income Section */}
-            <div style={{ display: "flex" }}>
+            {/* <div style={{ display: "flex" }}>
               <section
                 className={`dashboard-section ${isDarkMode ? "dark-card" : ""}`}
                 style={{ width: "170px" }}
@@ -370,7 +370,7 @@ function MainContent({ isDarkMode }) {
               >
                 Refer Now
               </button>
-            </div>
+            </div> */}
             {/* Notification */}
             <section
               className={`dashboard-section ${isDarkMode ? "dark-card" : ""}`}
