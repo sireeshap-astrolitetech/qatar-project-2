@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import "./MainFrame.css";
-import LogoIcon from "./logo.png";
+import LogoIcon from "./TM logo.png";
 import {
   Bell,
   Mail,
