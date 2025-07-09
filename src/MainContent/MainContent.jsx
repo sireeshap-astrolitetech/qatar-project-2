@@ -23,7 +23,7 @@ import vegetablesBasket from "./vegetables-basket.png";
 import fashionImage from "./Fashion4.avif";
 import mobilesImage from "./Mobiles33.png";
 import officeImage from "./Printer2.png";
-import computersImage from "./Computers4.jpg";
+import computersImage from "./Computers11.jpg";
 
 function MainContent({ isDarkMode }) {
   return (
